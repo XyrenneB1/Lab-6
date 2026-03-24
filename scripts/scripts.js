@@ -95,3 +95,6 @@ function changeDuration() {
 }
 
 let newDuration = prompt("Enter the number of days:"):
+
+duration = parseFloat(newDuration) || 0;
+durationText.innerHTML = duration;
