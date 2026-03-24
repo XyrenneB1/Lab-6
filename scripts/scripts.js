@@ -90,4 +90,7 @@ modelButton.addEventListener("click", ChannelMergerNode);
 
 let durationButton = document.getElementById("duration-button");
 
+function changeDuration() {
+    let durationText = document.getElementById("duration-text");
+}
 
