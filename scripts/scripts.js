@@ -75,8 +75,6 @@ function changeModel() {
 modelButton.addEventListener("click", ChannelMergerNode);
 
 
-
-
 /****************** duration button logic ******************/
 /*  - first, create a variable to represent the "Change Duration" pseudo-button.
     - then, create a function called changeDuration() that will
@@ -90,5 +88,6 @@ modelButton.addEventListener("click", ChannelMergerNode);
 
 // INSERT YOUR CODE HERE
 
+let durationButton = document.getElementById("duration-button");
 
 
