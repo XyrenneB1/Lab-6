@@ -72,6 +72,7 @@ function changeModel() {
     recalculate();
 }
 
+modelButton.addEventListener("click", ChannelMergerNode);
 
 
 
