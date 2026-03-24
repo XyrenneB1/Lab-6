@@ -69,7 +69,7 @@ function changeModel() {
         modelText.innerHTML = "Model XYZ"
     }
 
-    recallculate();
+    recalculate();
 }
 
 
