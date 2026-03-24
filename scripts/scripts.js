@@ -100,3 +100,5 @@ duration = parseFloat(newDuration) || 0;
 durationText.innerHTML = duration;
 
 recalculate();
+
+durationButton.addEventListener("click", changeDuration);
