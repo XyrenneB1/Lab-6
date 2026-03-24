@@ -31,7 +31,11 @@ let duration = 0;
 function recalculate() {
     let costLabel = document.getElementById("calculated-cost0");
     let totalCost = 0;
-    if ()
+    if (modelName == "XYZ") {
+        totalCost = duration * 100;
+    } else if (modelName == "CPRG") {
+        totalCost = duration * 213;
+    }
 }
 
 
