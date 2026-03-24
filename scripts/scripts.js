@@ -94,3 +94,4 @@ function changeDuration() {
     let durationText = document.getElementById("duration-text");
 }
 
+let newDuration = prompt("Enter the number of days:"):
