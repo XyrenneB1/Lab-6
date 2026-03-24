@@ -38,6 +38,8 @@ function recalculate() {
     }
 }
 
+costLabel.innerHTML = totalCost.toFixed(2);
+
 
 
 
