@@ -68,6 +68,8 @@ function changeModel() {
         modelName = "XYZ";
         modelText.innerHTML = "Model XYZ"
     }
+
+    recallculate();
 }
 
 
