@@ -34,10 +34,9 @@ function recalculate() {
   } else if (modelName === "CPRG") {
     totalCost = duration * 213;
   }
+
+  costLabel.innerHTML = totalCost.toFixed(2);
 }
-
-costLabel.innerHTML = totalCost.toFixed(2);
-
 /****************** model button logic ******************/
 
 /* 
@@ -86,13 +85,12 @@ let durationButton = document.getElementById("duration-button");
 
 function changeDuration() {
   let durationText = document.getElementById("duration-text");
+
+  let newDuration = prompt("Enter the number of days:");
+
+  duration = parseFloat(newDuration) || 0;
+  durationText.innerHTML = duration;
+
+  recalculate();
 }
-
-let newDuration = prompt("Enter the number of days:");
-
-duration = parseFloat(newDuration) || 0;
-durationText.innerHTML = duration;
-
-recalculate();
-
 durationButton.addEventListener("click", changeDuration);
