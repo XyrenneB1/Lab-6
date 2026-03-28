@@ -27,8 +27,9 @@ let duration = 0;
 // INSERT YOUR CODE HERE
 
 function recalculate() {
-  let costLabel = document.getElementById("calculated-cost0");
+  let costLabel = document.getElementById("calculated-cost");
   let totalCost = 0;
+
   if (modelName === "XYZ") {
     totalCost = duration * 100;
   } else if (modelName === "CPRG") {
@@ -88,7 +89,12 @@ function changeDuration() {
 
   let newDuration = prompt("Enter the number of days:");
 
-  duration = parseFloat(newDuration) || 0;
+  duration = Number(newDuration) || 0;
+
+  if (isNaN(duration) || duration < 0) {
+    duration = 0;
+  }
+
   durationText.innerHTML = duration;
 
   recalculate();
